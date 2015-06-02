@@ -21,7 +21,7 @@ LaterGator.load('/my-page', '.main-content-el-for-my-page', 'data-gator', {
 2) Fetch pieces of the page you just loaded
 
 ```
-LaterGator.load('/my-page', '#cool-content', {
+LaterGator.fetch('/my-page', '#cool-content', {
   'error': function(){ console.log('oh no!', arguments); },
   'success': function($content, contentString){ console.log('Your content has arrived.'); },
   'done': function(){ console.log('This fires on error AND success.'); }
